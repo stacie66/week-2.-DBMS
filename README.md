@@ -3,14 +3,12 @@ Question 1
 Retrieve checkNumber, paymentDate, and amount from the payments table:
 
 sql
-Copy
 SELECT checkNumber, paymentDate, amount
 FROM payments;
 Question 2
 Retrieve orderDate, requiredDate, and status of 'In Process' orders, sorted by orderDate (descending):
 
 sql
-Copy
 SELECT orderDate, requiredDate, status
 FROM orders
 WHERE status = 'In Process'
@@ -19,7 +17,6 @@ Question 3
 Display firstName, lastName, and email of 'Sales Rep' employees, sorted by employeeNumber (descending):
 
 sql
-Copy
 SELECT firstName, lastName, email
 FROM employees
 WHERE jobTitle = 'Sales Rep'
@@ -28,14 +25,12 @@ Question 4
 Retrieve all columns and records from the offices table:
 
 sql
-Copy
 SELECT *
 FROM offices;
 Question 5
 Fetch productName and quantityInStock, sorted by buyPrice (ascending), limited to 5 records:
 
 sql
-Copy
 SELECT productName, quantityInStock
 FROM products
 ORDER BY buyPrice ASC
